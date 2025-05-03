@@ -25,7 +25,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'rspec-rails', '~> 8.0', '>= 8.0.0'
   gem 'saml_idp', git: 'https://github.com/18F/saml_idp.git', branch: 'master'
 end
 
