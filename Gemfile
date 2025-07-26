@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 ruby '~> 2.6.5'
 
 gem 'pg'
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -13,8 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 # Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'omniauth-saml', '>= 1.10.0'
-gem 'ruby-saml'
+gem 'omniauth-saml', '>= 1.10.2'
+gem 'ruby-saml', '>= 1.10.0'
 
 group :deploy do
   gem 'capistrano' # , '~> 3.4'
@@ -25,12 +25,12 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
   gem 'saml_idp', git: 'https://github.com/18F/saml_idp.git', branch: 'master'
 end
 
 group :development do
-  gem 'bummr', require: false
+  gem 'bummr', '>= 0.3.0', require: false
   gem 'reek'
   gem 'rubocop'
 end
