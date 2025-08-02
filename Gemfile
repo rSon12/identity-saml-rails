@@ -13,8 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 # Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'omniauth-saml', '>= 1.10.0'
-gem 'ruby-saml'
+gem 'omniauth-saml', '>= 1.10.2'
+gem 'ruby-saml', '>= 1.18.1'
 
 group :deploy do
   gem 'capistrano' # , '~> 3.4'
