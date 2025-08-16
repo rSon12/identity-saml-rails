@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '~> 2.6.5'
 
 gem 'pg'
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
