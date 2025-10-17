@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 ruby '~> 2.6.5'
 
 gem 'pg'
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -13,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 # Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'omniauth-saml', '>= 1.10.0'
+gem 'omniauth-saml', '>= 1.10.2'
 gem 'ruby-saml'
 
 group :deploy do
@@ -25,7 +25,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
   gem 'saml_idp', git: 'https://github.com/18F/saml_idp.git', branch: 'master'
 end
 
@@ -37,7 +37,7 @@ end
 
 group :test do
   gem 'codeclimate-test-reporter', require: nil
-  gem 'sinatra', '>= 2.0.3'
+  gem 'sinatra', '>= 4.2.0'
   gem 'webmock'
 end
 
